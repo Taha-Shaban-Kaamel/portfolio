@@ -5,6 +5,7 @@ menuIcon.onclick = () => {
   menuIcon.classList.toggle('bx-x');
   navbar.classList.toggle('active');
 }
+
 // scroll secitons 
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
@@ -23,6 +24,24 @@ window.onscroll = () => {
     }
   })
 
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      console.log(entry);
+      
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show');
+      }
+    });
+  });
+  const elements = document.querySelectorAll('.hidden');
+
+  elements.forEach(element => {
+    observer.observe(element);
+  });
+ 
   // stay header on Top 
   let header = document.querySelector('header');
   header.classList.toggle('sticky', window.scrollY > 100);
