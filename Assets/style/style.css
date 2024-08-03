@@ -231,6 +231,79 @@ body {
     margin-right: 30px;
 }
 
+.home-content a  button {
+  width: 175px;
+  background: var(--bg-linear);
+  border-radius: 1000px;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  line-height: 29.05px;
+  text-transform: capitalize;
+  padding: 7px 20px 6px 23px;
+  cursor: pointer;
+  outline-style: none;
+  color: #FFFFFF;
+  text-align: center;
+  transition: all 0.3s ease-in-out 0s;
+  box-shadow: 12px 12px 24px rgb(19,76,107);
+  position: relative;
+}
+.home-content a button::before {
+  content: "";
+  border-radius: 1000px;
+  width: 200px;
+  height: 60px;
+  border: 3px solid rgb(2 162 246);
+  box-shadow: 0 0 60px rgba(255, 195, 16, 0.292);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+.home-content a .button:hover,
+.home-content a .button:focus {
+  color: var(--text-color);
+  transform: translateY(-6px);
+}
+.home-content a button::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid var(--text-color);
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+.home-content a button:hover::before,
+button:focus::before {
+  opacity: 1;
+}
+.home-content a button:hover::after,
+button:focus::after {
+  animation: none;
+  display: none;
+}
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+.home-content a 
 .home-content h1 {
     font-size: 3.5rem;
     font-weight: 700;

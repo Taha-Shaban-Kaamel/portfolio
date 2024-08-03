@@ -80,13 +80,10 @@ const skillsSet = {
     "React": "A JavaScript library for building user interfaces with reusable components."
   },
   "backend": {
-    "nodejs": "Node is used for server-side programming, making it possible for developers to use JavaScript for client-side and server-side code.",
-    "Express": "Express is a NodeJS framework that helps manage servers and routes.",
-    "Mongoose": "A MongoDB object modeling (ODM) library for Node.js that provides a simple and elegant way to interact with MongoDB databases.",
-    "MongoDB": "A NoSQL document database that is flexible, scalable, and easy to use.",
-    "FIREBASE":"Firebase is a mobile and web application development platform that provides a set of tools and services that front-end developers can use to build and deploy scalable and reliable applications."
-
-    
+    "php": "A popular general-purpose scripting language that is especially suited to web development.",
+    "laravel": "A PHP web application framework with expressive, elegant syntax designed for building modern web applications.",
+    "MySQL": "An open-source relational database management system based on Structured Query Language (SQL).",
+    "PostgreSQL": "An advanced, open-source relational database system that supports both SQL (relational) and JSON (non-relational) querying.",
   },
   "tools": {
     "git": "is a distributed version control system that tracks changes in any set of computer files.",
